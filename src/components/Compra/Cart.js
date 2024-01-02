@@ -331,7 +331,7 @@ const Cart = () => {
                             <li className="gap-3 flex justify-between flex-wrap  items-center ">
                               <div className="flex flex-wrap items-end gap-2 max-w-[250px] w-full">
                                 <img
-                                  src={`${process.env.REACT_APP_API_URL}${prod.photo}`}
+                                  src={`${prod.photo}`}
                                   alt=""
                                   className=" h-[90px] w-[90px]"
                                 />
@@ -514,7 +514,7 @@ const Cart = () => {
                       className="flex  shadow-sm  object-cover shadow-slate-500 bg-white rounded-lg">
                       <div>
                         <img
-                          src={`${process.env.REACT_APP_API_URL}${prod.photo}`}
+                          src={`${prod.photo}`}
                           alt=""
                           className=" h-[80px] w-[80px]"
                         />

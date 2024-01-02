@@ -110,13 +110,13 @@ function Gallery({ producto }) {
 
     const img = [
       {
-        url: `${process.env.REACT_APP_API_URL}${item.photo2}`,
+        url: `${item.photo2}`,
       },
       {
-        url: `${process.env.REACT_APP_API_URL}${item.photo}`,
+        url: `${item.photo}`,
       },
       {
-        url: `${process.env.REACT_APP_API_URL}${item.photo3}`,
+        url: `${item.photo3}`,
       },
     ];
 
@@ -218,7 +218,7 @@ function Gallery({ producto }) {
                 <div className="border-t-slate-300 border-t pt-1 flex justify-between">
                   <div className="flex gap-2 justify-start">
                     <img
-                      src={`${process.env.REACT_APP_API_URL}${prod.photo}`}
+                      src={`${prod.photo}`}
                       alt="prod"
                       style={{
                         textAlign: "center",
@@ -226,7 +226,7 @@ function Gallery({ producto }) {
                       className=" rounded-sm w-6 h-6 hover:w-36 hover:h-36 ease-out duration-300"
                     />
                     <img
-                      src={`${process.env.REACT_APP_API_URL}${prod.photo2}`}
+                      src={`${prod.photo2}`}
                       alt="prod"
                       style={{
                         textAlign: "center",
@@ -234,7 +234,7 @@ function Gallery({ producto }) {
                       className="rounded-sm w-6 h-6 hover:w-36 hover:h-36 ease-out duration-300"
                     />
                     <img
-                      src={`${process.env.REACT_APP_API_URL}${prod.photo3}`}
+                      src={`${prod.photo3}`}
                       alt="prod"
                       style={{
                         textAlign: "center",
