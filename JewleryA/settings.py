@@ -231,9 +231,15 @@ if not DEBUG:
     CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS_DEPLOY')
 
     DATABASES = {
-        "default": env.db("DATABASE_URL")
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': env('DB_NAME'),
+            'USER': env('DB_USER'),
+            'PASSWORD': env('DB_PASSWORD'),
+            'HOST': env('DB_HOST'),
+            'PORT': env('DB_PORT'),
+        }
     }
-    DATABASES["default"]["ATOMIC_REQUEST"] = True
 
     AWS_QUERYSTRING_AUTH = False
 
