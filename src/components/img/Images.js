@@ -1,6 +1,7 @@
 //Imagenes de la Web por componente URLs:
 
 ///////////////////////////////////////////////////////////////////////////
+////
 //Borrar en producion:
 import P1 from "assets/img/Personalize/Personalize.jpg";
 import logo_JY from "assets/img/Logo/logo.png";
@@ -41,7 +42,7 @@ export const Personalize = P1;
 // //Alert: NotFount.jpg
 // export const NotFound = "";
 
-// //Carrusel: Cn.jpg
+// //Carrusel: Cn.jpg 
 // export const C1 = "";
 // export const C2 = "";
 // export const C3 = "";
