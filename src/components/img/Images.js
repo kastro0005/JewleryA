@@ -1,62 +1,35 @@
 //Imagenes de la Web por componente URLs:
 
-///////////////////////////////////////////////////////////////////////////
-////
-//Borrar en producion:
-import P1 from "assets/img/Personalize/Personalize.jpg";
-import logo_JY from "assets/img/Logo/logo.png";
-import Car1 from "assets/img/Carrusel/C1.jpg";
-import Car2 from "assets/img/Carrusel/C2.jpg";
-import Car3 from "assets/img/Carrusel/C3.jpg";
-import Car4 from "assets/img/Carrusel/C4.jpg";
-import Car5 from "assets/img/Carrusel/C5.jpg";
-import Car6 from "assets/img/Carrusel/C6.jpg";
-import Car7 from "assets/img/Carrusel/C7.JPG";
-import Car8 from "assets/img/Carrusel/C8.jpg";
-import img_notFound from "assets/img/Alert/NotFound.jpg";
-import img_Cart from "assets/img/Cart/Cart.png";
-
 //Alert: NotFount.jpg
-export const NotFound = img_notFound;
+export const NotFound =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/53b09658-d450-4a24-0e58-be8c2e32e200/public";
 
 //Carrusel: Cn.jpg
-export const C1 = Car1;
-export const C2 = Car2;
-export const C3 = Car3;
-export const C4 = Car4;
-export const C5 = Car5;
-export const C6 = Car6;
-export const C7 = Car7;
-export const C8 = Car8;
+export const C1 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/299a4091-0445-4d70-e5cd-0bd8684a4600/public";
+export const C2 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/2b78c674-2fe5-489a-2b6c-d0f1779fc900/public";
+export const C3 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/ca69e9c6-60bf-418a-51c8-e1f61d5eb400/public";
+export const C4 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/fe6f1f3b-f55d-41b8-271e-1bbac3dab700/public";
+export const C5 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/f5d69d21-9c2d-48e8-cc92-5bc5f48d7200/public";
+export const C6 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/1196487a-b02e-4705-55eb-755b087a5f00/public";
+export const C7 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/9d293646-8ffb-4caf-b777-4ab1b65f4d00/public";
+export const C8 =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/05449c98-965b-4e60-550d-fb60d6442000/public";
 
 //Cart: Cart.png
-export const EmptyCart = img_Cart;
+export const EmptyCart =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/c81e7309-af8e-4636-8117-323e5071d500/public";
 
 //Logo: logo.png
-export const Logo = logo_JY;
+export const Logo =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/929d78f1-691d-428b-632f-d8368c743500/public";
 
 //Personalize: Personalize.jpg
-export const Personalize = P1;
-
-////////////////////////////////////////////////////////////////////////////////////
-// //Alert: NotFount.jpg
-// export const NotFound = "";
-
-// //Carrusel: Cn.jpg 
-// export const C1 = "";
-// export const C2 = "";
-// export const C3 = "";
-// export const C4 = "";
-// export const C5 = "";
-// export const C6 = "";
-// export const C7 = "";
-// export const C8 = "";
-
-// //Cart: Cart.png
-// export const Cart = "";
-
-// //Logo: logo.png
-// export const Logo = "";
-
-// //Personalize: Personalize.jpg
-// export const Personalize = "";
+export const Personalize =
+  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/691136ac-5741-410a-7b92-4803aa838f00/public";
