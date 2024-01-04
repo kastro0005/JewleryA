@@ -213,7 +213,8 @@ const Cart = () => {
             required
             className="w-10 bg-slate-50  rounded-md"
             value={selectedPur[name]}
-            onChange={handleChangePur(name)}>
+            onChange={handleChangePur(name)}
+          >
             <option className="text-black" defaultValue></option>
             {arr.map((prod, index) => (
               <option key={index} className="text-black">
@@ -251,7 +252,8 @@ const Cart = () => {
             required
             className="w-10 bg-slate-50 rounded-md"
             value={selectedSize[name]}
-            onChange={handleChangeSize(name)}>
+            onChange={handleChangeSize(name)}
+          >
             <option className="text-black" defaultValue></option>
             {arr.map((prod, index) => (
               <option key={index} className="text-black">
@@ -302,7 +304,8 @@ const Cart = () => {
               onClick={() => {
                 navigate("/");
               }}
-              className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 p-2">
+              className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 p-2"
+            >
               <span className="text-sm text-blue-400 font-bold pr-1 flex items-center">
                 <IoCart className="mr-2" />
                 Continue Shopping
@@ -326,7 +329,8 @@ const Cart = () => {
                       {selectedProducts[prod.name] > 0 && (
                         <div
                           key={index}
-                          className="shadow-slate-300 px-2 shadow-md bg-slate-50 mb-5 flex overflow-hidden rounded-md border-x border-y border-slate-300 w-full">
+                          className="shadow-slate-300 px-2 shadow-md bg-slate-50 mb-5 flex overflow-hidden rounded-md border-x border-y border-slate-300 w-full"
+                        >
                           <ul className="w-full " id="list">
                             <li className="gap-3 flex justify-between flex-wrap  items-center ">
                               <div className="flex flex-wrap items-end gap-2 max-w-[250px] w-full">
@@ -349,24 +353,49 @@ const Cart = () => {
                                   Qty:
                                 </span>
                                 <div className="flex items-center border-y border-x  rounded-lg">
-                                  <button
+                                  <div
                                     onClick={() => decreaseQuantity(prod.name)}
-                                    className="w-5 h-5  rounded-full bg-blue-500 text-white flex justify-center">
-                                    <span className="font-extrabold text-3xl flex items-center pb-2">
-                                      -
-                                    </span>
-                                  </button>
+                                    className="cursor-pointer w-5 h-5 items-center  rounded-full bg-blue-500 text-white flex justify-center"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      strokeWidth="5"
+                                      stroke="currentColor"
+                                      className="w-6 h-4"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M5 12h14"
+                                      />
+                                    </svg>
+                                  </div>
                                   <span className="mx-2 text-lg">
                                     {selectedProducts[prod.name]}
                                   </span>
-                                  <button
+                                  <div
                                     onClick={() => increaseQuantity(prod.name)}
-                                    className="w-5 h-5 items-center text-center rounded-full bg-blue-500 text-white flex justify-center">
-                                    <span className="font-extrabold text-3xl pb-2">
-                                      +
-                                    </span>
-                                  </button>
+                                    className="cursor-pointer w-5 h-5 items-center text-center rounded-full bg-blue-500 text-white flex justify-center"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      strokeWidth="5"
+                                      stroke="currentColor"
+                                      className="w-6 h-4"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                      />
+                                    </svg>
+                                  </div>
                                 </div>
+                                          
                               </div>
                               <div className="flex flex-wrap items-center max-w-[97px] gap-2 w-full ">
                                 <span className=" font-serif text-base">
@@ -416,7 +445,8 @@ const Cart = () => {
                             width: "100%",
                             display: "flex",
                           }}
-                          className="shadow-slate-300 shadow-md bg-slate-50 mb-5 overflow-hidden rounded-md border-x border-y border-slate-300">
+                          className="shadow-slate-300 shadow-md bg-slate-50 mb-5 overflow-hidden rounded-md border-x border-y border-slate-300"
+                        >
                           <ul className="w-full" id="list">
                             <li className="gap-2 flex justify-between px-2 flex-wrap">
                               <div className="max-w-[120px] w-full">
@@ -456,7 +486,8 @@ const Cart = () => {
                       onClick={() => {
                         validate();
                       }}
-                      className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 p-2">
+                      className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 p-2"
+                    >
                       <span className="text-sm text-blue-400 font-bold pr-1 flex items-center">
                         Checkout
                       </span>
@@ -478,7 +509,8 @@ const Cart = () => {
                   display: "flex",
                   flexWrap: "wrap",
                   justifyContent: "space-around",
-                }}>
+                }}
+              >
                 {cart.map((prod, index) => (
                   <div
                     key={index}
@@ -488,7 +520,8 @@ const Cart = () => {
                       display: "flex",
                       marginBottom: "30px",
                     }}
-                    className="gap-2 rounded-lg ml-1 mr-1 w-full max-w-80 border-slate-300 border-x border-y shadow-slate-300 shadow-md">
+                    className="gap-2 rounded-lg ml-1 mr-1 w-full max-w-80 border-slate-300 border-x border-y shadow-slate-300 shadow-md"
+                  >
                     <div className="flex flex-col justify-center items-center ">
                       <div>
                         <input
@@ -501,7 +534,8 @@ const Cart = () => {
                         <button
                           onClick={() => {
                             removeFromCart(prod);
-                          }}>
+                          }}
+                        >
                           <TiDeleteOutline className="w-5 h-5" />
                         </button>
                       </div>
@@ -511,7 +545,8 @@ const Cart = () => {
                         width: "100%", // Cambié el ancho al 100% para que sea responsive
                         maxWidth: "300px",
                       }}
-                      className="flex  shadow-sm  object-cover shadow-slate-500 bg-white rounded-lg">
+                      className="flex  shadow-sm  object-cover shadow-slate-500 bg-white rounded-lg"
+                    >
                       <div>
                         <img
                           src={`${prod.photo}`}
@@ -559,7 +594,8 @@ const Cart = () => {
               onClick={() => {
                 navigate("/");
               }}
-              className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 p-2">
+              className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 p-2"
+            >
               <span className="text-sm text-blue-400 font-bold pr-1 flex items-center">
                 <IoCart className="mr-2" />
                 Return to shop
@@ -579,7 +615,8 @@ const Cart = () => {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -592,17 +629,20 @@ const Cart = () => {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="max-w-[700px] w-full  flex justify-center mx-10  sm:p-6 sm:pb-4 relative transform overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all ">
                   <form
                     ref={form} // Asigna la referencia al formulario
                     onSubmit={(e) => handleSubmit(e)}
-                    className=" w-full max-w-2xl border-double border-4 border-slate-500 rounded-2xl">
+                    className=" w-full max-w-2xl border-double border-4 border-slate-500 rounded-2xl"
+                  >
                     <div className="p-4">
                       <div className="flex gap-0 mb-4">
                         <label
                           htmlFor="Info"
-                          className="block text-sm font-semibold text-black">
+                          className="block text-sm font-semibold text-black"
+                        >
                           Total to discont from card:
                         </label>
                         <input
@@ -610,12 +650,14 @@ const Cart = () => {
                           id="pago"
                           value={` $${calculateTotal()}`}
                           readOnly
-                          className="block  text-sm font-medium text-black"></input>
+                          className="block  text-sm font-medium text-black"
+                        ></input>
                       </div>
                       <div className="mb-2">
                         <label
                           htmlFor="Info"
-                          className="block mb-1 text-sm font-semibold text-black">
+                          className="block mb-1 text-sm font-semibold text-black"
+                        >
                           Items in Cart:
                         </label>
                         <textarea
@@ -630,14 +672,16 @@ const Cart = () => {
 
                       <label
                         htmlFor="Info"
-                        className="block mb-2 mt-4 text-sm font-bold text-black">
+                        className="block mb-2 mt-4 text-sm font-bold text-black"
+                      >
                         Personal Info:
                       </label>
 
                       {/* Nombre */}
                       <label
                         htmlFor="Info"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Name:
                       </label>
                       <input
@@ -652,7 +696,8 @@ const Cart = () => {
                       {/* Telefono */}
                       <label
                         htmlFor="Info"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Phone number
                       </label>
                       <input
@@ -667,7 +712,8 @@ const Cart = () => {
                       {/* Correo */}
                       <label
                         htmlFor="Email"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Email to contact you later
                       </label>
                       <input
@@ -681,7 +727,8 @@ const Cart = () => {
                       {/* Direccion */}
                       <label
                         htmlFor="Address"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Address to send
                       </label>
                       <input
@@ -695,14 +742,16 @@ const Cart = () => {
 
                       <label
                         htmlFor="Info"
-                        className="block mb-2 mt-4 text-sm font-bold text-black">
+                        className="block mb-2 mt-4 text-sm font-bold text-black"
+                      >
                         Card Info:
                       </label>
 
                       {/* Tarjeta */}
                       <label
                         htmlFor="Info"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Card Number:
                       </label>
                       <input
@@ -717,7 +766,8 @@ const Cart = () => {
                       {/* Fecha de Exp */}
                       <label
                         htmlFor="Info"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Expiration Date (MM/YY):
                       </label>
                       <div className="flex rounded-md mb-5 w-full text-black mr-0 py-1 px-2 leading-8">
@@ -725,7 +775,8 @@ const Cart = () => {
                           id="expirationMonth"
                           name="expirationMonth"
                           required
-                          className="border rounded p-2 mr-2">
+                          className="border rounded p-2 mr-2"
+                        >
                           <option defaultValue></option>
                           {Array.from({ length: 12 }, (_, i) => {
                             const month = (i + 1).toString().padStart(2, "0");
@@ -740,7 +791,8 @@ const Cart = () => {
                           id="expirationYear"
                           required
                           name="expirationYear"
-                          className="border rounded p-2">
+                          className="border rounded p-2"
+                        >
                           <option defaultValue></option>
                           {Array.from({ length: 18 }, (_, i) => {
                             const year = (2023 + i).toString();
@@ -755,7 +807,8 @@ const Cart = () => {
                       {/* Codigo de Seg */}
                       <label
                         htmlFor="Products"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Security Code:
                       </label>
                       <input
@@ -770,7 +823,8 @@ const Cart = () => {
                       {/* Codigo Postal */}
                       <label
                         htmlFor="Address"
-                        className="block mb-1 text-sm font-semibold text-black">
+                        className="block mb-1 text-sm font-semibold text-black"
+                      >
                         Zip code:
                       </label>
                       <input
@@ -791,7 +845,8 @@ const Cart = () => {
                           setOpen(false);
                         }}
                         className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5"
-                        title="Save">
+                        title="Save"
+                      >
                         <span className="text-sm text-red-400 font-bold ">
                           {" "}
                           Cancel
@@ -800,7 +855,8 @@ const Cart = () => {
 
                       <button
                         type="submit"
-                        className="cursor-pointer flex items-center fill-green-400 bg-green-950 hover:bg-green-900 active:border active:border-green-400 rounded-md duration-100 px-2 py-1.5">
+                        className="cursor-pointer flex items-center fill-green-400 bg-green-950 hover:bg-green-900 active:border active:border-green-400 rounded-md duration-100 px-2 py-1.5"
+                      >
                         <span className="text-sm text-green-400 font-bold ">
                           Send
                         </span>
@@ -823,7 +879,8 @@ const Cart = () => {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -836,7 +893,8 @@ const Cart = () => {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-center shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="items-center">
@@ -849,7 +907,8 @@ const Cart = () => {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h4"
-                          className="text-xl font-semibold leading-6 text-gray-900">
+                          className="text-xl font-semibold leading-6 text-gray-900"
+                        >
                           You're sure?!
                         </Dialog.Title>
                       </div>
@@ -857,10 +916,12 @@ const Cart = () => {
                   </div>
                   <form
                     onSubmit={sendEmail}
-                    className="bg-gray-100 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                    className="bg-gray-100 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+                  >
                     <button
                       type="submit"
-                      className="cursor-pointer flex items-center fill-green-400 bg-green-950 hover:bg-green-900 active:border active:border-green-400 rounded-md duration-100 px-2 py-1.5">
+                      className="cursor-pointer flex items-center fill-green-400 bg-green-950 hover:bg-green-900 active:border active:border-green-400 rounded-md duration-100 px-2 py-1.5"
+                    >
                       <span className="text-sm text-green-400 font-bold ">
                         Send
                       </span>
@@ -872,7 +933,8 @@ const Cart = () => {
                         setOpen(true);
                       }}
                       className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5"
-                      title="Save">
+                      title="Save"
+                    >
                       <span className="text-sm text-red-400 font-bold ">
                         {" "}
                         Cancel
@@ -895,7 +957,8 @@ const Cart = () => {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -908,7 +971,8 @@ const Cart = () => {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -921,7 +985,8 @@ const Cart = () => {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-xl font-semibold leading-6 text-gray-900">
+                          className="text-xl font-semibold leading-6 text-gray-900"
+                        >
                           Success!!
                         </Dialog.Title>
                         <div className="mt-2">
@@ -941,7 +1006,8 @@ const Cart = () => {
                         setOk(false);
                         removeElementsCart(elemt);
                       }}
-                      className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 px-2 py-1.5">
+                      className="cursor-pointer flex items-center fill-blue-400 bg-blue-950 hover:bg-blue-900 active:border active:border-blue-400 rounded-md duration-100 px-2 py-1.5"
+                    >
                       <span className="text-sm text-blue-400 font-bold ">
                         Ok
                       </span>
@@ -963,7 +1029,8 @@ const Cart = () => {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -976,7 +1043,8 @@ const Cart = () => {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -989,7 +1057,8 @@ const Cart = () => {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900">
+                          className="text-base font-semibold leading-6 text-gray-900"
+                        >
                           Fail
                         </Dialog.Title>
                       </div>
@@ -999,7 +1068,8 @@ const Cart = () => {
                     <button
                       onClick={() => setFail(false)}
                       type="button"
-                      className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5">
+                      className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5"
+                    >
                       <span className="text-sm text-red-400 font-bold ">
                         Ok
                       </span>
@@ -1021,7 +1091,8 @@ const Cart = () => {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -1034,7 +1105,8 @@ const Cart = () => {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -1047,7 +1119,8 @@ const Cart = () => {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900">
+                          className="text-base font-semibold leading-6 text-gray-900"
+                        >
                           Still to be selected
                         </Dialog.Title>
                         <div className="mt-2">
@@ -1062,7 +1135,8 @@ const Cart = () => {
                     <button
                       onClick={() => setFail1(false)}
                       type="button"
-                      className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5">
+                      className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5"
+                    >
                       <span className="text-sm text-red-400 font-bold ">
                         Ok
                       </span>
@@ -1084,7 +1158,8 @@ const Cart = () => {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -1097,7 +1172,8 @@ const Cart = () => {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -1110,7 +1186,8 @@ const Cart = () => {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900">
+                          className="text-base font-semibold leading-6 text-gray-900"
+                        >
                           Still to be selected
                         </Dialog.Title>
                         <div className="mt-2">
@@ -1125,7 +1202,8 @@ const Cart = () => {
                     <button
                       onClick={() => setFail2(false)}
                       type="button"
-                      className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5">
+                      className="cursor-pointer flex items-center fill-red-400 bg-red-950 hover:bg-red-900 active:border active:border-red-400 rounded-md duration-100 px-2 py-1.5"
+                    >
                       <span className="text-sm text-red-400 font-bold ">
                         Ok
                       </span>
