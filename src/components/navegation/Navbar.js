@@ -36,7 +36,7 @@ const products = [
     href: "/Aretes",
   },
   {
-    name: "Pircings",
+    name: "Piercings",
     description: "Modern pircings that enhance your unique style",
     href: "/Pircings",
   },

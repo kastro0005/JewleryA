@@ -106,7 +106,7 @@ function Footer() {
               Others
             </h6>
             <p className="mb-4 hover:underline hover:underline-offset-4">
-              <Link to="/Pircings">Pircings</Link>
+              <Link to="/Pircings">Piercings</Link>
             </p>
             <p className="mb-4 hover:underline hover:underline-offset-4">
               <Link to="/Brazaletes">Bracelets</Link>

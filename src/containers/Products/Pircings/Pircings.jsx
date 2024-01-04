@@ -18,7 +18,7 @@ function Pircings({ get_pircings, get_pircings_pages,pircings, count, next, prev
   return (
     <Layout>
       <Helmet>
-        <title>Yuyita's Jewelry | Pircings</title>
+        <title>Yuyita's Jewelry | Piercings</title>
         <meta
           name="description"
           content="Sitio de ventas de joyas de oro del más alto nivel, elaboradas artesanalmente o profesionalmente con opciones únicas en el mercado."
@@ -36,7 +36,7 @@ function Pircings({ get_pircings, get_pircings_pages,pircings, count, next, prev
         {/* en href va el link del sitio: https://www.example.com/ */}
       </Helmet>
       <Navbar />
-      <HeaderProd prod={"Pircings"} element={"Pircings"}/>
+      <HeaderProd prod={"Piercings"} element={"Pircings"}/>
       <Gallery producto={pircings && pircings} />
       <SmallSetPagination list_page={get_pircings_pages} list={pircings && pircings} count={count&&count}/>
       <Footer />
