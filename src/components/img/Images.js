@@ -33,3 +33,7 @@ export const Logo =
 //Personalize: Personalize.jpg
 export const Personalize =
   "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/691136ac-5741-410a-7b92-4803aa838f00/public";
+
+  //Logo del navegador
+  export const BrowserLogo = "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/9cddbff7-91be-491b-d6dd-bc7326a7b400/public"
+

@@ -12,6 +12,7 @@ import { TiDeleteOutline } from "react-icons/ti";
 import { IoCart } from "react-icons/io5";
 import { EmptyCart } from "components/img/Images";
 
+
 const Cart = () => {
   var items = [];
   var elemt = [];
