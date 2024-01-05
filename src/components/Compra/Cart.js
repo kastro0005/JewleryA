@@ -78,7 +78,6 @@ const Cart = () => {
   function reset() {
     document.getElementById("correo").value = "";
     document.getElementById("direccion").value = "";
-    document.getElementById("name").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("cardNumber").value = "";
     document.getElementById("expirationMonth").value = "";

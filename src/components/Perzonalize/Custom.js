@@ -153,7 +153,7 @@ function Componente1() {
                       <input
                         className="border-2 rounded-md mb-5 bg-white w-full text-black mr-0 py-1 px-2 leading-8"
                         type="text"
-                        placeholder="Discrbe"
+                        placeholder="Text or Character for your design"
                         id="Datos"
                         name="dato"
                         required
