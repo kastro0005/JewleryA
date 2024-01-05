@@ -360,7 +360,7 @@ const Cart = () => {
                       className="flex  shadow-sm  object-cover shadow-slate-500 bg-white rounded-lg">
                       <div>
                         <img
-                          src={`${process.env.REACT_APP_API_URL}${prod.photo}`}
+                          src={`${prod.photo}`}
                           alt=""
                           className=" h-[80px] w-[80px]"
                         />
