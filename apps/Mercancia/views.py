@@ -1353,9 +1353,6 @@ class EditPircingView(APIView):
         if (data['genero_usuario']):
             pircing.genero_usuario = data['genero_usuario']
             pircing.save()
-        if (data['lugar_de_uso']):
-            pircing.lugar_de_uso = data['lugar_de_uso']
-            pircing.save()
         if (data['photo']):
             pircing.photo = data['photo']
             pircing.save()
@@ -1636,9 +1633,6 @@ class EditDijeView(APIView):
         if (data['genero_usuario']):
             dije.genero_usuario = data['genero_usuario']
             dije.save()
-        if (data['tipo_dije']):
-            dije.tipo_dije = data['tipo_dije']
-            dije.save()
         if (data['photo']):
             dije.photo = data['photo']
             dije.save()
@@ -1918,15 +1912,6 @@ class EditAnilloView(APIView):
             anillo.save()
         if (data['genero_usuario']):
             anillo.genero_usuario = data['genero_usuario']
-            anillo.save()
-        if (data['lugar_de_uso']):
-            anillo.lugar_de_uso = data['lugar_de_uso']
-            anillo.save()
-        if (data['cantidad']):
-            anillo.cantidad = data['cantidad']
-            anillo.save()
-        if (data['tipo_anillo']):
-            anillo.tipo_anillo = data['tipo_anillo']
             anillo.save()
         if (data['photo']):
             anillo.photo = data['photo']
