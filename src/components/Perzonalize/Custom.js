@@ -31,7 +31,6 @@ function Componente1() {
     document.getElementById("direccion").value = "";
     document.getElementById("Products").value = "Garments";
     document.getElementById("Datos").value = "";
-    document.getElementById("name").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("cardNumber").value = "";
     document.getElementById("expirationMonth").value = "";
@@ -154,7 +153,7 @@ function Componente1() {
                       <input
                         className="border-2 rounded-md mb-5 bg-white w-full text-black mr-0 py-1 px-2 leading-8"
                         type="text"
-                        placeholder="Name, Letter, Date, Other"
+                        placeholder="Discrbe"
                         id="Datos"
                         name="dato"
                         required
@@ -165,21 +164,19 @@ function Componente1() {
                         className="block mb-2 text-sm font-bold text-black">
                         Personal Info:
                       </label>
-
-                      {/* Nombre */}
+                      {/* Correo */}
                       <label
-                        htmlFor="Info"
+                        htmlFor="Email"
                         className="block mb-1 text-sm font-semibold text-black">
-                        Your Name :
+                        Email:
                       </label>
                       <input
-                        className="border-2 rounded-md mb-5 bg-white w-full text-black mr-0 py-1 px-2 leading-8"
-                        type="text"
-                        placeholder=""
-                        id="name"
-                        name="user_name"
+                        className="border-2 rounded-md bg-white w-full text-black mr-0 py-1 px-2 leading-8 mb-5"
+                        type="email"
+                        placeholder="email@domain.com"
+                        name="email"
+                        id="correo"
                         required
-                        pattern="[A-Za-z]{2,20}"
                       />
                       {/* Telefono */}
                       <label
@@ -195,20 +192,6 @@ function Componente1() {
                         name="phone"
                         required
                         pattern="[0-9]{10}"
-                      />
-                      {/* Correo */}
-                      <label
-                        htmlFor="Email"
-                        className="block mb-1 text-sm font-semibold text-black">
-                        Email:
-                      </label>
-                      <input
-                        className="border-2 rounded-md bg-white w-full text-black mr-0 py-1 px-2 leading-8 mb-5"
-                        type="email"
-                        placeholder="email@domain.com"
-                        name="email"
-                        id="correo"
-                        required
                       />
                       {/* Direccion */}
                       <label
