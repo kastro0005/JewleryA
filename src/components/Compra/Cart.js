@@ -854,7 +854,7 @@ const Cart = () => {
       </Transition.Root>
       {/* Confirmacion de envio */}
       <Transition.Root show={send} as={Fragment}>
-        <Dialog as="div" className="relative z-10 gap-2" onClose={setSend}>
+        <Dialog as="div" className="relative z-10 " onClose={setSend}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -899,7 +899,7 @@ const Cart = () => {
                   </div>
                   <form
                     onSubmit={sendEmail}
-                    className="bg-gray-100 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+                    className="bg-gray-100 gap-2 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
                   >
                     <button
                       type="submit"
