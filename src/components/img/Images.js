@@ -32,7 +32,7 @@ export const Logo =
 
 //Personalize: Personalize.jpg
 export const Personalize =
-  "httpsimagedelivery.net540mrzyEHV4mRwLar4H0Vw6cd73d0a-0c6c-4cba-8481-d76749189c00public";
+  "https://imagedelivery.net/540mrzyEHV4mRwLar4H0Vw/6cd73d0a-0c6c-4cba-8481-d76749189c00/public";
 
   //Logo del navegador
   export const BrowserLogo = "https://imagedelivery.net/540mrzyEHV4mRwLar4H0Vw/a0b18b21-49ef-48d8-9d70-dc8c6d38d800/public";
