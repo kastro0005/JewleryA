@@ -243,9 +243,6 @@ if not DEBUG:
         }
     }
 
-    print(DATABASES)
-
-
     AWS_QUERYSTRING_AUTH = False
 
     # aws settings
