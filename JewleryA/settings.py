@@ -226,7 +226,7 @@ CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS_DEV')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-print(DATABASES)
+
 if not DEBUG:
     ALLOWED_HOSTS = env.list('ALLOWED_HOSTS_DEPLOY')
     CORS_ORIGIN_WHITELIST = env.list('CORS_ORIGIN_WHITELIST_DEPLOY')
@@ -242,6 +242,9 @@ if not DEBUG:
             'PORT': env('DB_PORT'),
         }
     }
+
+    print(DATABASES)
+
 
     AWS_QUERYSTRING_AUTH = False
 
