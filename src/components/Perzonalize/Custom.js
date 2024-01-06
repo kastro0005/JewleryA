@@ -48,10 +48,10 @@ function Componente1() {
     setOpen(false);
     emailjs
       .sendForm(
-        "service_dg8jwyc",
-        "template_97o61h9",
+        "service_b6ol1ep",
+        "template_wyct25j",
         form.current,
-        "nvJe-veEEIQFjzjfS"
+        "o4X0YPIyKuwtjLZk-iASa"
       )
       .then(
         (result) => {

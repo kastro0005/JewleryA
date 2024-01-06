@@ -120,10 +120,10 @@ const Cart = () => {
     setSend(false);
     emailjs
       .sendForm(
-        "service_dg8jwyc",
-        "template_0j1epe5",
+        "service_b6ol1ep",
+        "template_efltyki",
         form.current,
-        "nvJe-veEEIQFjzjfS"
+        "o4X0YPIyKuwtjLZk-iASa"
       )
       .then(
         (result) => {
